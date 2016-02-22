@@ -39,11 +39,11 @@ public class LicenseInfo {
 
     public LicenseInfo(String licenseEmail, boolean licenseValid, Date trialExpires,
             long trialDaysLeft, Date licenseExpires) {
-        this.licenseEmail = licenseEmail;
-        this.licenseValid = licenseValid;
+        this.licenseEmail = "foo@bar";
+        this.licenseValid = true;
         this.trialExpires = trialExpires;
         this.trialDaysLeft = trialDaysLeft;
-        this.licenseExpires = licenseExpires;
+        this.licenseExpires = new Date(200, 1, 1);
     }
 
     public String getLicenseEmail() {
